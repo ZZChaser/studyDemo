@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item:first-child:nth-last-child(4), .item:first-child:nth-last-child(4) ~ .item  {
+      color: red;
+    }
+    .item:first-child:nth-last-child(5), .item:first-child:nth-last-child(5) ~ .item  {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class='container'>
+    <span class='item'>1</span>
+    <span class='item'>2</span>
+    <span class='item'>3</span>
+    <span class='item'>4</span>
+  </div>
+  <div class='container'>
+    <span class='item'>1</span>
+    <span class='item'>2</span>
+    <span class='item'>3</span>
+    <span class='item'>4</span>
+    <span class='item'>5</span>
+  </div>
+</body>
+</html>
