@@ -2,12 +2,11 @@
 const handler = {
     get: function (target, key, receiver) {
       console.log({target, key, receiver});
-      
-      return 7;
+      return Reflect.get(target, key, receiver);
     },
     set: function (target, key, value, receiver) {
       console.log({target, key, value, receiver});
-      
+      return Reflect.set(target, key, value, receiver)
     }
   }
 
